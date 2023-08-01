@@ -1,0 +1,17 @@
+{
+	"appId": "com.shineiosapp.afflash",
+	"appName": "af-flash",
+	"bundledWebRuntime": true,
+	"npmClient": "npm",
+	"webDir": "www",
+	"appendUserAgent": "shine-app",
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 0
+		}
+	},
+	"cordova": {},
+	"server": {
+		"androidScheme": "https"
+	}
+}

@@ -1,0 +1,8 @@
+<div class="rolling-card" (click)="clickCard()" [ngClass]="{'flipped': isShowContent}">
+  <ng-container>
+    <figure class="front"></figure>
+    <figure class="back">
+      {{img}}
+    </figure>
+  </ng-container>
+</div>

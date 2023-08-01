@@ -1,0 +1,35 @@
+.rolling-card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .65s;
+  box-shadow: 0px 2px 4px gray;
+  font-size: 50px;
+
+  &.flipped {
+    transform: rotateY(180deg);
+    pointer-events: none;
+  }
+
+  figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background-color: #b6e6ff;
+  }
+
+  .back {
+    background-color: lightpink;
+    transform: rotateY(180deg);
+  }
+}

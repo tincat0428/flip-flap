@@ -1,0 +1,7 @@
+{
+  "name": "af-flash",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

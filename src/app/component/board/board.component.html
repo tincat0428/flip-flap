@@ -1,0 +1,13 @@
+<div class="board" [ngClass]="{'lock': cardData.lock}">
+  <section class="game">
+    <app-rolling-card *ngFor="let item of [].constructor(12)">
+      {{'test'}}
+    </app-rolling-card>
+  </section>
+</div>
+<div class="mask" *ngIf="cardData.finish">
+  <ion-text color="primary">
+    <h1>Well Done!</h1>
+  </ion-text>
+  <ion-button (click)="cardData.restart()">Restart</ion-button>
+</div>
